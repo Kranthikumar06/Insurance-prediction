@@ -102,7 +102,7 @@ Insurance-prediction/
 
 2. **Install dependencies**
    ```bash
-   pip install pandas scikit-learn streamlit
+   pip install -r requirements.txt
    ```
 
 3. **Run the pipeline** (only needed if you want to retrain the model)
@@ -123,6 +123,8 @@ streamlit run app.py
 ```
 
 Then open your browser at `http://localhost:8501`, enter the customer details, and click **Predict** to see the estimated annual premium.
+
+For Streamlit Community Cloud deployments, use a supported Python version such as **3.12** in the app's **Advanced settings**. Python 3.14 can break older Streamlit builds because some standard-library modules were removed.
 
 ---
 
